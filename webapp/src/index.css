@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Default styling for input fields */
+.inp {
+  border: none;
+  border-bottom: 2px solid #D0AC54;
+  padding: 10px 180px 20px 5px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Placeholder animation for input fields */
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.4s 0.4s ease;
+  text-indent: -100%;
+  opacity: 1;
+}
+
+
+
+
+@media (max-width: 400px) {
+  .inp {
+    padding: 10px 40px 20px 5px;
+    font-size: 18px;
+  }
+}
+
+
+/* Media Query for Extra Small (xs) screens */
+@media (max-width: 600px) {
+  .inp {
+    padding: 10px 80px 20px 5px;
+    font-size: 18px;
+  }
+}
+
+/* Media Query for Small (sm) screens */
+@media (min-width: 601px) and (max-width: 960px) {
+  .inp {
+    padding: 10px 150px 20px 5px;
+    font-size: 19px;
+  }
+}
+
+/* Media Query for Medium (md) screens */
+@media (min-width: 961px) and (max-width: 1280px) {
+  .inp {
+    padding: 10px 180px 20px 5px;
+    font-size: 20px;
+  }
+}
+
+/* Media Query for Large (lg) screens */
+@media (min-width: 1281px) {
+  .inp {
+    padding: 10px 200px 20px 5px;
+    font-size: 21px;
+  }
+}
+
+
+#captcha{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+
+
+.image-slider-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.image-slide {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #fff;
+  h2 {
+    margin: 0;
+  }
+}
+
+.image-description {
+  text-align: center;
+  margin-top: 10px;
+  p {
+    font-size: 18px;
+  }
+}
