@@ -25,7 +25,7 @@ const Home = () => {
     <>
     
 
-    <Banner  backgroundImage={bdImg1} text={"Working together, on principles."} text2={" Welcome !!!"}  text_sx2={{paddingLeft:{xs:"35px",sm:"30px",md:"0px"}}} text_sx={{paddingRight:{xs:"30px", sm:"25px", md:"0px"}}} />
+    <Banner  backgroundImage={bdImg1} text={"Working together, on principles."} text2={" Welcome"}  text_sx2={{paddingLeft:{xs:"35px",sm:"30px",md:"0px"}}} text_sx={{paddingRight:{xs:"30px", sm:"25px", md:"0px"}}} />
     <About/>
     
     
