@@ -1,14 +1,13 @@
-# This is an appspec.yml template file for use with an EC2/On-Premises deployment in CodeDeploy.
-
 version: 0.0
 os: linux
 
 files:
-  - source: /build/
-    destination: /var/www/html
+  - source: /build/   # This should match your deployment package structure.
+    destination: /var/www/html/build/   # The destination path on the EC2 instance.
+    overwrite: true   # Set this to true if you want to overwrite files in the destination.
 
 permissions:
-  - object: /
-    pattern: "**"
+  - object: /var/www/html/build/   # Match the destination path.
+    pattern: "**"   # This includes all files in the 'build' directory.
     owner: ubuntu
     group: ubuntu
